@@ -8,7 +8,7 @@ class Portfolio extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.purple.shade100,
         elevation: 0,
         title: Row(
           children: [

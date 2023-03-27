@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/widgets/button_row.dart';
 import 'package:portfolio/widgets/contact_button.dart';
+
+import '../widgets/body.dart';
 
 class Portfolio extends StatelessWidget {
   const Portfolio({super.key});
@@ -7,6 +10,7 @@ class Portfolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.purple.shade100,
         elevation: 0,
@@ -36,8 +40,20 @@ class Portfolio extends StatelessWidget {
           ContactButton(
             buttonText: 'Contact me',
             icon: Icon(Icons.send_sharp),
-            
+            onPressed: () {},
           )
+        ],
+      ),
+      body: Stack(
+        children: [
+          Body(),
+          Align(
+              alignment: Alignment.bottomLeft,
+              child: Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 100, vertical: 60),
+                child: SizedBox(height: 59, child: ButtonRow()),
+              )),
         ],
       ),
     );

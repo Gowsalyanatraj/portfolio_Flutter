@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/utils/util.dart';
 import 'package:portfolio/widgets/button_row.dart';
 import 'package:portfolio/widgets/contact_button.dart';
 
 import '../widgets/body.dart';
 
 class Portfolio extends StatelessWidget {
+  get url => url;
   const Portfolio({super.key});
 
   @override
@@ -25,7 +27,7 @@ class Portfolio extends StatelessWidget {
                     'https://fastly.picsum.photos/id/64/4326/2884.jpg?hmac=9_SzX666YRpR_fOyYStXpfSiJ_edO3ghlSRnH2w09Kg'),
               ),
             ),
-            SizedBox(width: 5),
+            const SizedBox(width: 5),
             Text(
               'Gowsalya',
               style: TextStyle(
@@ -40,7 +42,9 @@ class Portfolio extends StatelessWidget {
           ContactButton(
             buttonText: 'Contact me',
             icon: Icon(Icons.send_sharp),
-            onPressed: () {},
+            onPressed: () {
+              launchMailto();
+            },
           )
         ],
       ),

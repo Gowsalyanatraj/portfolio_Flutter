@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'Screens/main_screen.dart';
 
+
 void main() {
   runApp(const MyApp());
 }
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Portfolio(),
+      home: const Portfolio(),
     );
   }
 }

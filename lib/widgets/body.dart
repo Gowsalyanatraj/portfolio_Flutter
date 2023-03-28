@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/utils/util.dart';
 import 'package:portfolio/widgets/contact_button.dart';
+import 'package:mailto/mailto.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Body extends StatelessWidget {
   final projectsList = [
     {
-      'title': 'Exploring the Adventure',
+      'title': 'Exploring the Design thinks',
       'subtitle': 'Great client',
-      'image': 'https://picsum.photos/id/200/400/300'
+      'image': 'https://picsum.photos/id/1/400/300'
     },
     {
-      'title': 'Earth Behind',
+      'title': 'Nature of the design',
       'subtitle': 'The best of the best!',
-      'image': 'https://picsum.photos/id/100/400/300'
+      'image': 'https://picsum.photos/seed/picsum/400/300'
     },
     {
       'title': 'Connect',
@@ -19,9 +22,9 @@ class Body extends StatelessWidget {
       'image': 'https://picsum.photos/id/1014/400/300'
     },
     {
-      'title': 'Harvesting the technology',
+      'title': 'Illustration',
       'subtitle': 'Save places you\'ve visited',
-      'image': 'https://picsum.photos/id/3/400/300'
+      'image': 'https://picsum.photos/400/300'
     },
     {
       'title': 'Bingo',
@@ -71,7 +74,9 @@ class Body extends StatelessWidget {
                                       child: ContactButton(
                                         buttonText: 'Drop me a line',
                                         icon: Icon(Icons.mail_outline),
-                                        onPressed: () {},
+                                        onPressed: () {
+                                          launchMailto();
+                                        },
                                       ),
                                     ))
                               ]),

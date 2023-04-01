@@ -121,7 +121,7 @@ class Body extends StatelessWidget {
                           child: Column(
                             children: [
                               ListTile(
-                                leading: Icon(Icons.list_alt),
+                                leading: Icon(Icons.launch),
                                 title: Text(projectsList[index]['title']!),
                                 subtitle:
                                     Text(projectsList[index]['subtitle']!),

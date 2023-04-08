@@ -3,6 +3,9 @@ import 'package:portfolio/utils/util.dart';
 import 'package:portfolio/widgets/button_row.dart';
 import 'package:portfolio/widgets/contact_button.dart';
 
+import '../responsive/desktop_body.dart';
+import '../responsive/mobile_body.dart';
+import '../responsive/responsive_layout.dart';
 import '../widgets/body.dart';
 
 class Portfolio extends StatelessWidget {
@@ -12,6 +15,7 @@ class Portfolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+       
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.purple.shade100,

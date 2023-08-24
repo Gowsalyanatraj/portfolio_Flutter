@@ -43,7 +43,7 @@ class Body extends StatelessWidget {
         Expanded(
             flex: 1,
             child: Container(
-              color: Colors.white,
+              color: Color.fromARGB(255, 26, 35, 77),
               child: Column(
                 children: [
                   Expanded(
@@ -58,12 +58,12 @@ class Body extends StatelessWidget {
                           child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(right: 70),
+                                const Padding(
+                                  padding: EdgeInsets.only(right: 70, top: 200),
                                   child: Text(
                                     ' I \'m Gowsalya Natraj. \n A Flutter developer \n and UI designer',
                                     style: TextStyle(
-                                        fontSize: 40.5, color: Colors.blueGrey),
+                                        fontSize: 30.5, color: Colors.white),
                                   ),
                                 ),
                                 Align(
@@ -73,7 +73,7 @@ class Body extends StatelessWidget {
                                           horizontal: 100, vertical: 60),
                                       child: ContactButton(
                                         buttonText: 'Drop me a line',
-                                        icon: Icon(Icons.mail_outline),
+                                        icon: const Icon(Icons.mail_outline),
                                         onPressed: () {
                                           launchMailto();
                                         },
@@ -92,11 +92,11 @@ class Body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 100,
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 70, bottom: 20),
+            const Padding(
+              padding: EdgeInsets.only(left: 70, bottom: 20),
               child: Text(
                 'My Projects',
                 style: TextStyle(
@@ -113,7 +113,7 @@ class Body extends StatelessWidget {
                 itemCount: projectsList.length,
                 itemBuilder: (context, index) {
                   return Container(
-                    color: Colors.white,
+                    color: Color.fromARGB(255, 98, 129, 173),
                     child: Column(
                       children: [
                         Card(
@@ -121,7 +121,7 @@ class Body extends StatelessWidget {
                           child: Column(
                             children: [
                               ListTile(
-                                leading: Icon(Icons.launch),
+                                leading: const Icon(Icons.launch),
                                 title: Text(projectsList[index]['title']!),
                                 subtitle:
                                     Text(projectsList[index]['subtitle']!),
@@ -131,7 +131,7 @@ class Body extends StatelessWidget {
                                 child: Image.network(
                                     projectsList[index]['image']!),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 30,
                               )
                             ],
@@ -145,7 +145,7 @@ class Body extends StatelessWidget {
             ))
           ],
         )),
-        SizedBox(width: 100),
+        const SizedBox(width: 100),
       ],
     );
   }

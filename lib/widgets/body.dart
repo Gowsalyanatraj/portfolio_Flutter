@@ -43,7 +43,7 @@ class Body extends StatelessWidget {
         Expanded(
             flex: 1,
             child: Container(
-              color: Color.fromARGB(255, 26, 35, 77),
+              color: Color.fromARGB(255, 109, 48, 120),
               child: Column(
                 children: [
                   Expanded(

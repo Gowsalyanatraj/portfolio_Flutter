@@ -72,7 +72,7 @@ class Body extends StatelessWidget {
                                       padding: const EdgeInsets.symmetric(
                                           horizontal: 100, vertical: 60),
                                       child: ContactButton(
-                                        buttonText: 'Drop me a line',
+                                        buttonText: 'Drop a line',
                                         icon: const Icon(Icons.mail_outline),
                                         onPressed: () {
                                           launchMailto();
@@ -100,7 +100,7 @@ class Body extends StatelessWidget {
               child: Text(
                 'My Projects',
                 style: TextStyle(
-                  color: Colors.black54,
+                  color: Colors.black87,
                   fontWeight: FontWeight.w600,
                   fontSize: 23,
                 ),

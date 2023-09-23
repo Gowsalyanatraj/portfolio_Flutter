@@ -61,9 +61,9 @@ class Body extends StatelessWidget {
                                 const Padding(
                                   padding: EdgeInsets.only(right: 70, top: 200),
                                   child: Text(
-                                    ' I \'m Gowsalya Natraj. \n A Flutter developer \n and UI designer',
+                                    ' I \'m Gowsalya Natraj. \n UI Designer \n and UI Developer',
                                     style: TextStyle(
-                                        fontSize: 30.5, color: Colors.white),
+                                        fontSize: 30.5, color: Colors.grey),
                                   ),
                                 ),
                                 Align(

@@ -20,10 +20,10 @@ class Portfolio extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.purple.shade100,
         elevation: 0,
-        title: Row(
+        title: const Row(
           children: [
             Padding(
-              padding: const EdgeInsets.all(10.0),
+              padding: EdgeInsets.all(10.0),
               child: CircleAvatar(
                 radius: 28,
                 backgroundColor: Colors.white,
@@ -31,7 +31,7 @@ class Portfolio extends StatelessWidget {
                     'https://fastly.picsum.photos/id/64/4326/2884.jpg?hmac=9_SzX666YRpR_fOyYStXpfSiJ_edO3ghlSRnH2w09Kg'),
               ),
             ),
-            const SizedBox(width: 5),
+            SizedBox(width: 5),
             Text(
               'Gowsalya',
               style: TextStyle(
@@ -45,7 +45,7 @@ class Portfolio extends StatelessWidget {
         actions: [
           ContactButton(
             buttonText: 'Contact me',
-            icon: Icon(Icons.send_sharp),
+            icon: const Icon(Icons.send_sharp),
             onPressed: () {
               launchMailto();
             },
@@ -55,11 +55,11 @@ class Portfolio extends StatelessWidget {
       body: Stack(
         children: [
           Body(),
-          Align(
+          const Align(
               alignment: Alignment.bottomLeft,
               child: Padding(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 100, vertical: 60),
+                    EdgeInsets.symmetric(horizontal: 100, vertical: 60),
                 child: SizedBox(height: 59, child: ButtonRow()),
               )),
         ],
